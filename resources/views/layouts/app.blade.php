@@ -13,7 +13,11 @@
     <body>
         <div id="app">
             <div class="container">
+                <h2>SPAのテスト</h2>
                 <router-view></router-view>
+
+                <h2>ペジネートのテスト</h2>
+                <my-table></my-table>
             </div>
         </div>
     </body>

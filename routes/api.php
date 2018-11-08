@@ -17,6 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::middleware('api')->get('/user/list', function (Request $request) {
+    return App\User::paginate();
+});
+
 Route::group(['middleware' => 'api'], function() {
     // 記事を投稿する処理
     Route::post('/article/{id}', function($id) {

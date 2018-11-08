@@ -20,6 +20,7 @@ window.Vue = require('vue');
 Vue.use(VueRouter);
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('my-table', require('./components/MyTable.vue'));
 
 const router = new VueRouter({
     mode: 'history',
